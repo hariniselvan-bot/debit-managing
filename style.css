@@ -6,6 +6,78 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+/* Remove default browser bullets and margins */
+.nav-links, .nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Layout */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background: linear-gradient(90deg, #5a2245, #0b0b0b);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 6px;
+}
+
+.brand-name {
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff3ba7;
+  text-shadow: 0 0 8px #ff3ba7;
+}
+
+/* Responsive (for mobile view) */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
 
 body {
   background: radial-gradient(circle at top left, #222 0%, #111 40%, #000 100%);
