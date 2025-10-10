@@ -7,28 +7,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="login.css">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
 </head>
-<header>
-  <div class="logo">
-    <a href="index.html">
-      <img src="logo.jpg" alt="Stackly Logo">
-      <h1>STACKLY</h1>
-    </a>
-  </div>
-  <div class="menu-toggle" id="menu-toggle">☰</div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html" class="active">Login</a></li>
 
-    </ul>
-  </nav>
-</header>
 <body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="logo.jpg" alt="Stackly Logo">
+        <h1>STACKLY</h1>
+      </a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <div class="login-container">
     <!-- Left Section -->
@@ -36,11 +35,11 @@
       <h1>LOGIN</h1>
       <p>Hey welcome back!<br>We hope you had a great day</p>
 
-    
-
       <p class="signup-text">Not yet a member? 
         <a href="signup.html">Sign Up</a>
       </p>
+
+    
     </div>
 
     <!-- Right Section -->
@@ -52,7 +51,7 @@
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="Enter your password" required>
 
-    <button type="submit" class="login-btn">login</button>
+        <button type="submit" class="login-btn">Login</button>
       </form>
     </div>
   </div>
@@ -62,14 +61,12 @@
   </footer>
 
   <script>
-  
-
-    // Simulated form submission
     function handleLogin(event) {
-      event.preventDefault();
-      alert("Login Successful! Welcome back to Stackly 💜");
+      event.preventDefault(); // Stop normal form submission
+
+      // Redirect to the 404 page
+      window.location.href = "404.html";
     }
   </script>
-
 </body>
 </html>
