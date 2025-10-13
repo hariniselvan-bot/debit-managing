@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debit Manager</title>
+  <link rel="stylesheet" href="aboutus.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+  <!-- Header -->
+ <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.jpg" alt="Stackly Logo">
+      <h1>STACKLY</h1>
+    </a>
+  </div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Home2</a></li>
+      <li><a href="aboutus.html"class="active">Aboutus</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>We help businesses innovate and grow</h1>
+      <p>With over 10 years of experience helping businesses to find comprehensive solutions.</p>
+      <div class="hero-buttons">
+        <a href="index.html" class="btn-green">Our Company</a>
+        <a href="contact.html" class="btn-dark">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Section -->
+  <section class="business">
+    <div class="container">
+      <div class="business-grid">
+        <div class="business-box"><img src="img1.jpg" alt=""><h3>Business Ideas</h3></div>
+        <div class="business-box"><img src="img2.jpg" alt=""><h3>Innovation</h3></div>
+        <div class="business-box"><img src="img3.jpg" alt=""><h3>Directory of Finance Businesses</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <h3>Accumulation</h3>
+        <p>An assumption in finance is a statement or condition that is taken to be true without proof<p> used to estimate future financial performance or analyze possible outcomes.</p></p>
+      </div>
+      <div class="service-box">
+        <h3>Mutual Funds</h3>
+        <p>A mutual fund is a professionally managed investment fund that collects money from multiple investors <P> purchase diversified financial securities for the purpose of earning returns.</P></p>
+      </div>
+      <div class="service-box">
+        <h3>Risk Management</h3>
+        <p>Risk management is the systematic process of identifying, analyzing<p> and responding to risk factors throughout the life of a business or investment to minimize losses and maximize opportunities.</p></p>
+      </div>
+      <div class="service-box">
+        <h3>Estate Planning</h3>
+        <p>Estate planning is the process of arranging the management and disposal of a person’s estate during their lifetime and after death<p> with the aim of maximizing its value and ensuring the smooth transfer of assets to heirs.</p></p>
+      </div>
+      <div class="service-box">
+        <h3>Retirement Planning</h3>
+        <p>process of identifying income goals, estimating future expenses, and implementing a savings and investment strategy to ensure financial security during retirement.</p>
+      </div>
+      <div class="service-box">
+        <h3>Business Planning</h3>
+        <p>It helps users quickly understand what services are available in a clear and attractive way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Section -->
+  <section class="business">
+    <div class="container">
+      <div class="business-grid">
+        <div class="business-box"><img src="img4.jpg" alt=""><h3>investing</h3></div>
+        <div class="business-box"><img src="img5.jpg" alt=""><h3>services</h3></div>
+        <div class="business-box"><img src="img6.jpg" alt=""><h3>managing debit works</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackly Footer with Map</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    <footer>
+  <div class="footer-overlay"></div>
+    <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+
+    .footer {
+      background: url('footer.jpg') no-repeat center bottom;
+      padding: 40px 10% 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 200px;
+      margin: 20px;
+    }
+
+    .footer-column h3 {
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin: 10px 0;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    .footer-contact p {
+      margin: 6px 0;
+    }
+
+    .map {
+      flex: 1 1 300px;
+      margin: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .social-icons {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .copyright {
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        padding: 30px 5%;
+      }
+
+      .map {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logo.jpg" alt="Stackly Logo">
+        <h3>STACKLY</h3>
+            </div>
+        
+
+      <div class="footer-links">
+        <h4>check us</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>MMR COMPLEX, Salem, Tamil Nadu 636008</p>
+        <p>+91 70107 92745</p>
+        <p>info@thestackly.com</p>
+      </div>
+      <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/people/Stackly-Stackly/pfbid0JtGU9e9Lr3qi7T7zwqd7znjcKBFgJkRNUT9dkSAfVgj5Fea9cnwPDAaKFdqcZVvBl/?rdid=6mn5QnllxYJS3OSw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BrqaZkJRe%2F"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/The_Stackly"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/company/the-stackly/"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/thestackly/#"><i class="fab fa-instagram"></i></a>
+  </div>
+      <iframe
+          src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Stackly | All Rights Reserved</p>
+    </div>
+  </footer>

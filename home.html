@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debit Manager</title>
+  <link rel="stylesheet" href="home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+  <!-- Header -->
+ <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.jpg" alt="Stackly Logo">
+      <h1>STACKLY</h1>
+    </a>
+  </div>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html"class="active">Home2</a></li>
+      <li><a href="aboutus.html">Aboutus</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>We Make Debt Management Simple & Smart</h1>
+      <p>Empowering your financial freedom with intelligent solutions.</p>
+      <a href="login.html" class="btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <section class="cards-section">
+  <h2>Our Latest Insights</h2>
+  <div class="cards-container">
+
+    <!-- Row 1 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d" alt="">
+      <h3>How to Manage Business Debt Effectively</h3>
+      <p>Discover strategies to improve your company’s financial health.</p>
+    </div>
+
+    <div class="card">
+      <img src="financial planning.jpg" alt="">
+      <h3>Why Financial Planning Matters</h3>
+      <p>Learn how small changes can make a big impact on your finances.</p>
+    </div>
+
+    <div class="card">
+      <img src="debit consolidate.jpg" alt="">
+      <h3>Debt Consolidation: What You Should Know</h3>
+      <p>Understanding how to simplify multiple debts into one manageable plan.</p>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="card">
+      <img src="credit score.jpg" alt="">
+      <h3>Tips to Improve Credit Score</h3>
+      <p>Simple ways to boost your credit and manage repayments wisely.</p>
+    </div>
+
+    <div class="card">
+      <img src="interest.jpg" alt="">
+      <h3>Understanding Loan Interest Rates</h3>
+      <p>Know how interest works before committing to any financial plan.</p>
+    </div>
+
+    <div class="card">
+      <img src="financial freedom.jpg" alt="">
+      <h3>Financial Freedom Through Budgeting</h3>
+      <p>Practical budgeting methods for long-term financial independence.</p>
+    </div>
+    <div class="card">
+      <img src="smart saving.jpg" alt="">
+      <h3>Smart Saving for Future Goals</h3>
+      <p>Plan your savings efficiently to reach milestones faster.</p>
+    </div>
+
+    <div class="card">
+      <img src="investment.jpg" alt="">
+      <h3>Investing Basics for Beginners</h3>
+      <p>Learn the essentials of investment and start growing your wealth.</p>
+    </div>
+    </div>
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackly Footer with Map</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    <footer>
+  <div class="footer-overlay"></div>
+    <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+
+    .footer {
+      background: url('footer.jpg') no-repeat center bottom;
+      padding: 40px 10% 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-column {
+      flex: 1 1 200px;
+      margin: 20px;
+    }
+
+    .footer-column h3 {
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin: 10px 0;
+    }
+
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    .footer-contact p {
+      margin: 6px 0;
+    }
+
+    .map {
+      flex: 1 1 300px;
+      margin: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .social-icons {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
+
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .copyright {
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        padding: 30px 5%;
+      }
+
+      .map {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logo.jpg" alt="Stackly Logo">
+        <h3>STACKLY</h3>
+            </div>
+        
+
+      <div class="footer-links">
+        <h4>check us</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>MMR COMPLEX, Salem, Tamil Nadu 636008</p>
+        <p>+91 70107 92745</p>
+        <p>info@thestackly.com</p>
+      </div>
+      <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/people/Stackly-Stackly/pfbid0JtGU9e9Lr3qi7T7zwqd7znjcKBFgJkRNUT9dkSAfVgj5Fea9cnwPDAaKFdqcZVvBl/?rdid=6mn5QnllxYJS3OSw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BrqaZkJRe%2F"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://x.com/The_Stackly"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/company/the-stackly/"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/thestackly/#"><i class="fab fa-instagram"></i></a>
+  </div>
+      <iframe
+          src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Stackly | All Rights Reserved</p>
+    </div>
+  </footer>
