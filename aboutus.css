@@ -1,585 +1,260 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Debit Manager</title>
+  <link rel="stylesheet" href="aboutus.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-/* Header container */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #000;
-  padding: 10px 80px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-}
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 
-/* Logo section */
-.logo {
-  display: flex;
-  align-items: center;
-}
+  <!-- Header -->
+ <header>
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo.jpg" alt="Stackly Logo">
+      <h1>STACKLY</h1>
+    </a>
+  </div>
+  <!-- Hamburger icon -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label> 
+   <nav class="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Home2</a></li>
+      <li><a href="aboutus.html"class="active">About us</a></li>
+      <li><a href="facility.html">facility</a></li>
+      <li><a href="contact1.html">Reach us</a></li>
+      <li><a href="login here.html">Login</a></li>
+    </ul>
+  </nav>
+</header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>We help businesses innovate and grow</h1>
+      <p>With over 10 years of experience helping businesses to find comprehensive solutions.</p>
+      <div class="hero-buttons">
+        <a href="home.html" class="btn-green">Our Company</a>
+        <a href="contact1.html" class="btn-dark">Get In Touch</a>
+      </div>
+    </div>
+  </section>
 
-.logo a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
+  <!-- Business Section -->
+  <section class="business">
+    <div class="container">
+      <div class="business-grid">
+        <div class="business-box"><img src="img1.jpg" alt=""><h3>Business Ideas</h3></div>
+        <div class="business-box"><img src="img2.jpg" alt=""><h3>Innovation</h3></div>
+        <div class="business-box"><img src="img3.jpg" alt=""><h3>Directory of Finance Businesses</h3></div>
+      </div>
+    </div>
+  </section>
 
-.logo img {
-  width: 45px;
-  height: 45px;
-  margin-right: 10px;
-  border-radius: 8px;
-}
+  <!-- Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-box">
+        <h3>Accumulation</h3>
+        <p>An assumption in finance is a statement or condition that is taken to be true without proof<p> used to estimate future financial performance or analyze possible outcomes.</p></p>
+      </div>
+      <div class="service-box">
+        <h3>Mutual Funds</h3>
+        <p>A mutual fund is a professionally managed investment fund that collects money from multiple investors <P> purchase diversified financial securities for the purpose of earning returns.</P></p>
+      </div>
+      <div class="service-box">
+        <h3>Risk Management</h3>
+        <p>Risk management is the systematic process of identifying, analyzing<p> and responding to risk factors throughout the life of a business or investment to minimize losses and maximize opportunities.</p></p>
+      </div>
+      <div class="service-box">
+        <h3>Estate Planning</h3>
+        <p>Estate planning is the process of arranging the management and disposal of a person’s estate during their lifetime and after death<p> with the aim of maximizing its value and ensuring the smooth transfer of assets to heirs.</p></p>
+      </div>
+      <div class="service-box">
+        <h3>Retirement Planning</h3>
+        <p>process of identifying income goals, estimating future expenses, and implementing a savings and investment strategy to ensure financial security during retirement.</p>
+      </div>
+      <div class="service-box">
+        <h3>Business Planning</h3>
+        <p>It helps users quickly understand what services are available in a clear and attractive way.</p>
+      </div>
+    </div>
+  </section>
 
-.logo h1 {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: 22px;
-  letter-spacing: 1px;
-}
+  <!-- Business Section -->
+  <section class="business">
+    <div class="container">
+      <div class="business-grid">
+        <div class="business-box"><img src="img4.jpg" alt=""><h3>investing</h3></div>
+        <div class="business-box"><img src="img5.jpg" alt=""><h3>services</h3></div>
+        <div class="business-box"><img src="img6.jpg" alt=""><h3>managing debit works</h3></div>
+      </div>
+    </div>
+  </section>
 
-/* Navigation menu */
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-}
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stackly Footer with Map</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    <footer>
+  <div class="footer-overlay"></div>
+    <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  transition: 0.3s;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  color: #f36aff;
-  text-shadow: 0 0 8px #f36aff;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    padding: 15px 30px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-}
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #000;
-  color: #fff;
-}
-
-/* 🌸 General animation for entire page */
-body {
-  opacity: 0;
-  animation: fadeInPage 2s ease forwards;
-  background-color: #000; /* or your preferred gradient */
-  font-family: "Poppins", sans-serif;
-}
-
-/* Every section fades up softly */
-section, header, footer, .about, .home, .contact, .projects {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 1.5s ease forwards;
-}
-
-/* Apply delays for smooth sequence */
-header { animation-delay: 0.2s; }
-.home { animation-delay: 0.4s; }
-.about { animation-delay: 0.6s; }
-.projects { animation-delay: 0.8s; }
-.contact { animation-delay: 1s; }
-footer { animation-delay: 1.2s; }
-
-/* ✨ Keyframes for smooth page load */
-@keyframes fadeInPage {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Optional: glowing text animation for headers */
-h1, h2, h3 {
-  color: #100505;
-  text-shadow: 0 0 15px #050505;
-  animation: glowFade 2s ease-in-out infinite alternate;
-}
-
-@keyframes glowFade {
-  from {
-    text-shadow: 0 0 5px #ffbaff, 0 0 10px #ffbaff;
-  }
-  to {
-    text-shadow: 0 0 25px #ffbaff, 0 0 40px #ffbaff;
-  }
-}
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 
 
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 80px;
-  background: #000;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
+    .footer {
+      background: url('footer.jpg') no-repeat center bottom;
+      padding: 40px 10% 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-.logo a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
+    .footer-column {
+      flex: 1 1 200px;
+      margin: 20px;
+    }
 
-.logo img {
-  width: 45px;
-  height: 45px;
-  margin-right: 10px;
-}
+    .footer-column h3 {
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
 
-.logo h1 {
-  font-size: 22px;
-  color: white;
-}
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 40px;
-}
+    .footer-column ul li {
+      margin: 10px 0;
+    }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
-}
+    .footer-column ul li a {
+      color: #ccc;
+      text-decoration: none;
+    }
 
-nav a:hover,
-nav a.active {
-  color: #f36aff;
-  text-shadow: 0 0 8px #f36aff;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
 
-body {
-  color: #333;
-}
+    .footer-contact p {
+      margin: 6px 0;
+    }
 
-/* Header */
-.top-bar {
-  background: #00394f;
-  color: white;
-  padding: 8px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-}
+    .map {
+      flex: 1 1 300px;
+      margin: 20px;
+    }
 
-.appointment {
-  background: #00c46d;
-  color: white;
-  padding: 6px 14px;
-  border-radius: 3px;
-  text-decoration: none;
-}
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 6px;
+    }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 60px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+    .social-icons {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
 
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: #00394f;
-}
-.logo span {
-  color: #00c46d;
-}
+    .social-icons a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 20px;
+      text-decoration: none;
+    }
 
-nav ul {
-  display: flex;
-  list-style: none;
-}
-nav ul li {
-  margin: 0 15px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-nav ul li a:hover {
-  color: #00c46d;
-}
+    .copyright {
+      text-align: center;
+      color: #aaa;
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
 
-/* Hero Section */
-.hero {
-  background: url("aboutusbg.jpg") no-repeat center center/cover;
-  color: white;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  padding: 0 60px;
-  position: relative;
-}
+    @media (max-width: 768px) {
+      .footer {
+        flex-direction: column;
+        padding: 30px 5%;
+      }
 
-/* Dark overlay for better text contrast */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.55);
-}
+      .map {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 550px;
-}
+ <!-- FOOTER -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logo.jpg" alt="Stackly Logo">
+        <h3>STACKLY</h3>
+            </div>
+        
 
-.hero h1 {
-  font-size: 42px;
-  font-weight: 700;
-}
-.hero p {
-  margin: 15px 0 25px;
-  font-size: 16px;
-}
-.btn-green {
-  background: #00c46d;
-  color: white;
-  padding: 10px 22px;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-right: 10px;
-}
-.btn-dark {
-  background: #00394f;
-  color: white;
-  padding: 10px 22px;
-  border-radius: 4px;
-  text-decoration: none;
-}
+      <div class="footer-links">
+        <h4>check us</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+      <li><a href="home.html">Home2</a></li>
+      <li><a href="aboutus.html">About us</a></li>
+      <li><a href="facility.html">facility</a></li>
+      <li><a href="contact1.html">Reach us</a></li>
+      <li><a href="login here.html">Login</a></li>
+        </ul>
+      </div>
 
-/* Business Section */
-.business {
-  background: #fff;
-  padding: 60px;
-}
-.business-grid {
-  display: flex;
-  gap: 20px;
-}
-.business-box {
-  flex: 1;
-  background: #f8f8f8;
-  border-radius: 6px;
-  overflow: hidden;
-  text-align: center;
-}
-.business-box img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.business-box h3 {
-  padding: 15px;
-  background: #00394f;
-  color: white;
-  font-size: 16px;
-}
-
-/* Services Section */
-.services {
-  padding: 60px;
-  text-align: center;
-}
-.services h2 {
-  font-size: 28px;
-  margin-bottom: 40px;
-}
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-.service-box {
-  background: #110e0e;
-  padding: 25px;
-  border-radius: 6px;
-}
-.service-box h3 {
-  color: #00c46d;
-  margin-bottom: 10px;
-}
-
-/* Projects */
-.projects {
-  padding: 60px;
-  text-align: center;
-}
-.project-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.project-grid img {
-  width: 30%;
-  border-radius: 6px;
-}
-
-/* Call Back */
-.callback {
-  background: #00394f;
-  color: white;
-  text-align: center;
-  padding: 60px;
-}
-.callback form {
-  margin-top: 25px;
-}
-.callback input {
-  padding: 10px;
-  margin: 10px;
-  width: 220px;
-  border-radius: 4px;
-  border: none;
-}
-.callback button {
-  background: #00c46d;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.callback button:hover {
-  background: #00a85c;
-}
-
-/* Footer */
-footer {
-  background: #0b0016;
-  padding: 60px 80px 30px;
-  color: #dcdcdc;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer-left h2 {
-  color: #a45cf8;
-}
-
-.footer-right input {
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-  width: 250px;
-  margin-top: 10px;
-}
-
-.footer-right button {
-  padding: 10px 16px;
-  background: #a45cf8;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  font-weight: 600;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.bottom-text {
-  text-align: center;
-  padding-top: 30px;
-  border-top: 1px solid #2a2a2a;
-  margin-top: 40px;
-  font-size: 14px;
-}
-footer {
-  background: #120013;
-  color: white;
-  padding: 60px 80px 20px;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-
-.footer-logo img {
-  width: 50px;
-  border-radius: 10px;
-}
-
-.footer-logo p {
-  margin-top: 10px;
-  color: #aaa;
-}
-
-.footer-links ul {
-  list-style: none;
-  margin-top: 10px;
-}
-
-.footer-links ul li a {
-  color: #ccc;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.footer-links ul li a:hover {
-  color: #ff4bff;
-}
-
-.footer-contact p {
-  color: #aaa;
-  margin-top: 8px;
-}
-
-.copyright {
-  text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #333;
-  padding-top: 20px;
-  color: #777;
-}
-/* 🌙 Responsive Navbar Design */
-@media (max-width: 900px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 25px;
-    position: relative;
-  }
-
-  /* Hide normal menu */
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.95);
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    width: 200px;
-    border-radius: 10px;
-    padding: 15px 0;
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
-    transition: all 0.3s ease-in-out;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  nav ul li {
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  nav ul li a {
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-  }
-
-  /* Hamburger icon */
-  .menu-toggle {
-    display: block;
-    font-size: 25px;
-    cursor: pointer;
-    color: #fff;
-  }
-}
-
-/* Hide hamburger for desktop */
-@media (min-width: 901px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  nav ul {
-    display: flex !important;
-    position: static;
-    background: none;
-    box-shadow: none;
-  }
-}
-/* Animated lines background */
-.footer-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  background: repeating-linear-gradient(
-      60deg,
-      rgba(255, 0, 255, 0.15) 0px,
-      rgba(255, 0, 255, 0.15) 2px,
-      transparent 2px,
-      transparent 40px
-    ),
-    repeating-linear-gradient(
-      -60deg,
-      rgba(0, 200, 255, 0.15) 0px,
-      rgba(0, 200, 255, 0.15) 2px,
-      transparent 2px,
-      transparent 40px
-    );
-  animation: moveLines 20s linear infinite;
-  opacity: 0.3;
-  z-index: 1;
-}
+      <div class="footer-contact">
+        <h4>Get In Touch</h4>
+        <p>MMR COMPLEX, Salem, Tamil Nadu 636008</p>
+        <p>+91 70107 92745</p>
+        <p>info@thestackly.com</p>
+      </div>
+      <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="404.html"><i class="fab fa-facebook-f"></i></a>
+    <a href="404.html"><i class="fab fa-twitter"></i></a>
+    <a href="404.html"><i class="fab fa-linkedin-in"></i></a>
+    <a href="404.html"><i class="fab fa-instagram"></i></a>
+  </div>
+      <iframe
+          src="https://www.google.com/maps?q=Salem%20Tamil%20Nadu&output=embed"
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+    <div class="copyright">
+      <p>© 2025 Stackly | All Rights Reserved</p>
+    </div>
+  </footer>
